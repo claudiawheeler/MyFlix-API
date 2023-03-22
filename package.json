@@ -1,0 +1,24 @@
+{
+  "name": "movie_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-import-resolver-node": "^0.3.7",
+    "eslint-module-utils": "^2.7.4",
+    "eslint-plugin-es": "^3.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-scope": "^7.1.1",
+    "eslint-visitor-keys": "^3.3.0"
+  },
+  "devDependencies": {
+    "tap": "^16.3.4"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
