@@ -52,6 +52,8 @@ let topMovies = [
     },
 ];
 
+app.use(morgan('common', {stream: accessLogStream }));
+
 app.get('/movies', (req, res) => {
     res.json(topMovies);
 });
@@ -61,8 +63,6 @@ app.get('/', (req, res) => {
 });
 
 app.use(express.static('public'));
-
-app.use(morgan('common', {stream: accessLogStream }));
 
 app.use((err, req, res, next) => {
     console.error(err.stack);
