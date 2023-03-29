@@ -9,6 +9,19 @@ path = require('path');
 
 const accessLogStream = fs.createWriteStream(path.join(__dirname, 'log.txt'), { flags: 'a' })
 
+let users = [
+    {
+        id: 1,
+        name: "Claudia",
+        facortieMovies: []
+    },
+    {
+        id: 2,
+        name: "Chase",
+        facortieMovies: []
+    }
+],
+
 let movies = [
     {
         Title: 'The Nightmare Before Christmas',
